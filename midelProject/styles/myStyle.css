@@ -1,0 +1,309 @@
+@font-face {
+    font-family: "Amatic";
+    src: url("../fonts/Amatic_SC/AmaticSC-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Amatic-Bold";
+    src: url("../fonts/Amatic_SC/AmaticSC-Bold.ttf");
+    font-weight: bold;
+}
+
+
+
+body {
+    direction: rtl;
+    background-color:black;
+    color:white;
+    
+}
+ /*הגדרת גודל כללי לעמוד*/
+#container {
+    margin: 0 auto;
+    width: 960px;
+}
+/*הגדרת הפונט לכלל העמודים באתר*/
+#container *{
+    font-family:'Amatic';
+    font-weight:normal;
+}
+/*הגדרת גודל התמונה של הזברה (תמונת אוירה) מתחת לתפריט הניווט*/
+#zebraPic {
+    background-image: url('../image/IMG_0578.jpg');
+    background-size: 960px 800px;
+    width: 600;
+    height: 471px;
+    width: 960px;
+    background-position-y: -71px;
+    background-position-x:-10;
+    position:relative;
+    top:-22px;
+}
+/*עיצוב כללי לכלל הפריטים ברשימה */
+ul {
+    list-style: none;
+    font-family:'Amatic SC';
+    font-size:20pt;
+    background-color:black;
+    height:40px;
+    width:960px;
+    padding:0px;
+}
+/*עיצוב הפריטים ברשימה*/
+nav ul li {
+    display: inline-block;
+    float: right;
+    padding-top: 10px;
+    padding-right: 125px;
+    margin-top:-22px;
+   
+}
+/*עיצוב הפריטים ברשימה באופן ספציפי כך שהעיצוב יכול על כל שם בקישור בנפרד*/
+    nav ul li a {
+        color: white;
+        width: 120px;
+        height: 60px;
+        padding-top: 50px;
+        text-decoration: none;
+        text-align: center;
+        padding: 2px;
+        padding-left: 5px;
+        padding-right: 4px;
+        outline: 2px solid #FFFFFF;
+    }
+
+/*אינטרקציה לתפריט ניווט במעבר עכבר*/
+     nav ul li a:hover{
+        background-color:white;
+        color:black;
+    }
+
+/*עיצוב לאחר מעבר עכבר*/
+.here{
+    background-color:white;
+    color:black;
+}
+
+/*עיצוב הכותרת ראשית*/
+#por {
+    text-align: center;
+    width: 960px;
+    font-family: 'Amatic SC';
+    font-size: 40pt;
+}
+
+/*עיצוב תמונת הפרופיל*/
+#chen {
+    background-image: url('../image/chen.png');
+    width: 600px;
+    height: 530px;
+    background-size: 615px;
+    position: relative;
+    bottom: 148px;
+    right: 175px;
+    transition: background 2s ease;
+}
+/*אינטראקציה למצב מעבר עכבר לתמונת הפנים*/
+    #chen:hover {
+        background-size: 700px;
+        -webkit-transition: background 2s ease;
+        -moz-transition: background 2s ease;
+        -o-transition: background 2s ease;
+        transition: background 2s ease;
+    }
+
+/*עיצוב כותרת משנית */
+#about {
+    font-family: 'Amatic SC';
+    font-size: 30pt;
+    text-align: center;
+    width: 960px;
+    margin-top: -210px;
+}
+
+/*עיצוב פסקת התוכן בעמוד הבית*/
+.homePage {
+    font-family: 'Amatic SC';
+    font-size: 25pt;
+    margin-top: -13px;
+    text-align: center;
+    width: 960px;
+}
+
+/*עיצוב כל הכותרות הראשיות של עמודי התוכן עבור התצרים*/
+h1{
+    font-size:40pt;
+    text-align:center;
+    font-family:Amatic-Bold
+}
+
+/*הגדרת העיצוב לכל הפסקאות הראשיות בעמודי התוצרים*/
+.tochen {
+    font-size: 22pt;
+    text-align: center;
+    line-height: 37px;
+    word-spacing: 3px;
+    margin-top: -28px;
+}
+
+/*עיצוב של כל הכותרות המשניות של עמודי התוצרים*/
+h2 {
+    font-size: 25pt;
+    margin-top: 97px;
+    font-family:Amatic-Bold
+}
+
+/*עיצוב כל הפסקאות תוכן המשניות בעמודי התוצרים*/
+p{
+    font-size:20pt;
+}
+
+ /* עיצוב התמונה של היצירה מקורית*/
+#makor {
+    width: 380px;
+    display: inline-block;
+    position: relative;
+    top: 62px;
+    right: -113px;
+}
+
+/*עיצוב התמונה  של היצירה שלי*/
+#myPhoto {
+    width: 451px;
+    display: inline-block;
+    position: relative;
+    top: -260px;
+    right: 497px;
+}
+/*עיצוב הכותרות לתמונות בעמוד מצב חירום*/
+.move {
+    display: inline-block;
+    position: relative;
+    right: -22px;
+    top: -269px;
+    padding-right: 24px;
+    font-size:20pt;
+}
+/*עיצוב אייקון משקפיים בעמוד מצב חירום*/
+.glassesPic {
+    background-image: url('../image/glassesIcon.png');
+    width: 50px;
+    height: 35px;
+    background-size: 50px;
+    position: relative;
+    top: -98px;
+    right: -41px;
+}
+/*עיצוב כותרת לאייקון משקפיים*/
+.more {
+    font-size: 25pt;
+    position: relative;
+    top: -232px;
+    left: -58px;
+    font:bold;
+}
+
+/*סידור ספציפי בעמוד מצב חירום לכותרות h2*/
+.coteret2 {
+    margin-bottom: -24px;
+    position: relative;
+    top: -249px;
+}
+/*סידור ספציפי בעמוד מצב חירום לפסקאות התחתונות */
+.peska2 {
+    position: relative;
+    top: -244px;
+}
+
+/*הגדרות עיצוב לסרטון בעמוד מצב חירום*/
+#myvideo{
+    position:relative;
+    bottom:50px;
+}
+
+/*עיצוב תמונת המקור בעמוד פוסטר*/
+#posterMakor {
+    width: 441px;
+    display: inline-block;
+    position: relative;
+    top: 176px;
+    right: -130px;
+}
+
+/*עיצוב התמונה שלי בעמוד פוסטר*/
+#myPoster {
+    width: 451px;
+    display: inline-block;
+    position: relative;
+    top: -512px;
+    right: 573px;
+}
+
+/*עיצוב הכותרות המשניות של עמוד פוסטר*/
+.insperation {
+    margin-bottom: -24px;
+    position: relative;
+    top: 5px;
+}
+/*עיצוב פסקאות התוכן המשניות של עמוד פוסטר*/
+.charly {
+    position: relative;
+    top: 4px;
+}
+
+/* עיצוב הכותרות של התמונות בעמוד פוסטר*/
+.chocolate {
+    display: inline-block;
+    position: relative;
+    right: -17px;
+    top: -513px;
+    padding-right: 17px;
+    font-size:20pt;
+}
+
+/*עיצוב תמונת החפץ בעמוד פורטרט*/
+#mesgeret {
+    width: 400px;
+    position: relative;
+    right: 48px;
+    top: 160px;
+}
+
+/*עיצוב תמונת הפורטרט בעמוד פורטרט*/
+#portret {
+    width: 400px;
+    position: relative;
+    right: 681px;
+    top: -180px;
+}
+
+
+
+/*עיצוב כותרות התמונות בעמוד הפורטרט*/
+.staff {
+    display: inline-block;
+    position: relative;
+    right: 147px;
+    top: -169px;
+    padding-right: 16px;
+    font-size: 20pt;
+    margin-left: 54px;
+}
+/*עיצוב הפסקאות המשניות בעמוד הפורטרט*/
+.peska3 {
+    position: relative;
+    bottom: 254px;
+}
+/*עיצוב הכותרות של הפסקאות המשניות בעמוד הפורטרט*/
+.coteret3 {
+    position: relative;
+    bottom: 235px;
+}
+/*עיצוב האודיו בעמודי תוצרים של פוסטר ופורטרט*/
+.song{
+    position:relative;
+    bottom:150px;
+}
+
+ 
